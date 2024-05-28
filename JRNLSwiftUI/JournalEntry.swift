@@ -13,14 +13,16 @@ struct JournalEntry: Identifiable, Hashable {
     let date = Date()
     let entryTitle: String
     let photo: UIImage?
+    let latitude: Double?
+    let longitude: Double?
 }
 
 //MARK: - Sample data
 let testData = [
-    JournalEntry(entryTitle: "날씨 죽인다 행배야", photo: UIImage(systemName: "sun.max")),
-    JournalEntry(entryTitle: "날씨 죽인다 행배야", photo: UIImage(systemName: "sun.snow")),
-    JournalEntry(entryTitle: "날씨 죽인다 행배야", photo: UIImage(systemName: "sunset")),
-    JournalEntry(entryTitle: "날씨 죽인다 행배야", photo: UIImage(systemName: "snowflake"))
+    JournalEntry(entryTitle: "날씨 죽인다 행배야", photo: UIImage(systemName: "sun.max"), latitude: 37.3346, longitude: -122.0090),
+    JournalEntry(entryTitle: "날씨 죽인다 행배야", photo: UIImage(systemName: "sun.snow"), latitude: 37.3346, longitude: -122.0090),
+    JournalEntry(entryTitle: "날씨 죽인다 행배야", photo: UIImage(systemName: "sunset"), latitude: 37.3346, longitude: -122.0090),
+    JournalEntry(entryTitle: "날씨 죽인다 행배야", photo: UIImage(systemName: "snowflake"), latitude: 37.3346, longitude: -122.0090)
 ]
 
 
