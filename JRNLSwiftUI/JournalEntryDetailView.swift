@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-struct JournalEntryDetail: View {
+struct JournalEntryDetailView: View {
     var selectedJournalEntry: JournalEntry
     
     var body: some View {
@@ -57,6 +57,6 @@ struct JournalEntryDetail: View {
 
 #Preview {
     NavigationView {
-        JournalEntryDetail(selectedJournalEntry: testData[0])
+        JournalEntryDetailView(selectedJournalEntry: testData[0])
     }
 }

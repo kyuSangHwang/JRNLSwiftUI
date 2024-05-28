@@ -11,6 +11,7 @@ struct JournalEntry: Identifiable, Hashable {
     //MARK: - Properties
     let id = UUID()
     let date = Date()
+    let rating: Int
     let entryTitle: String
     let entryBody: String
     let photo: UIImage?
@@ -20,10 +21,10 @@ struct JournalEntry: Identifiable, Hashable {
 
 //MARK: - Sample data
 let testData = [
-    JournalEntry(entryTitle: "날씨 죽인다 행배야", entryBody: "마 이 개이새꺄 마 다 했어!", photo: UIImage(systemName: "sun.max"), latitude: 37.3346, longitude: -122.0090),
-    JournalEntry(entryTitle: "날씨 죽인다 행배야", entryBody: "이새끼들이 말이야", photo: UIImage(systemName: "sun.snow"), latitude: 37.3346, longitude: -122.0090),
-    JournalEntry(entryTitle: "날씨 죽인다 행배야", entryBody: "개새끼들", photo: UIImage(systemName: "sunset"), latitude: 37.3346, longitude: -122.0090),
-    JournalEntry(entryTitle: "날씨 죽인다 행배야", entryBody: "실례지만 어데 최씹니까?", photo: UIImage(systemName: "snowflake"), latitude: 37.3346, longitude: -122.0090)
+    JournalEntry(rating: 5, entryTitle: "날씨 죽인다 행배야", entryBody: "마 이 개이새꺄 마 다 했어!", photo: UIImage(systemName: "sun.max"), latitude: 37.3346, longitude: -122.0090),
+    JournalEntry(rating: 3, entryTitle: "날씨 죽인다 행배야", entryBody: "이새끼들이 말이야", photo: UIImage(systemName: "sun.snow"), latitude: 37.3346, longitude: -122.0090),
+    JournalEntry(rating: 2, entryTitle: "날씨 죽인다 행배야", entryBody: "개새끼들", photo: UIImage(systemName: "sunset"), latitude: 37.3346, longitude: -122.0090),
+    JournalEntry(rating: 1, entryTitle: "날씨 죽인다 행배야", entryBody: "실례지만 어데 최씹니까?", photo: UIImage(systemName: "snowflake"), latitude: 37.3346, longitude: -122.0090)
 ]
 
 
