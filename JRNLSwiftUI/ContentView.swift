@@ -11,7 +11,23 @@ struct ContentView: View {
     var journalEntries: [JournalEntry] = testData
     
     var body: some View {
-        List(journalEntries) { journalEntry in
+        NavigationStack {
+            List(journalEntries) { journalEntry in
+                JournalCell(journalEntry: journalEntry)
+            }
+            .navigationTitle("Journal List")
+            .navigationDestination(for: JournalEntry.self) { JournalEntry in
+                Text(JournalEntry.entryTitle)
+            }
+        }
+    }
+}
+
+struct JournalCell: View {
+    var journalEntry: JournalEntry
+    
+    var body: some View {
+        NavigationLink(value: journalEntry) {
             VStack {
                 HStack {
                     Image(uiImage: journalEntry.photo ?? UIImage(systemName: "face.smiling")!)

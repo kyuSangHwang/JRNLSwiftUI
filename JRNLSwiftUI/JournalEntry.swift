@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct JournalEntry: Identifiable {
+struct JournalEntry: Identifiable, Hashable {
     //MARK: - Properties
     let id = UUID()
     let date = Date()
