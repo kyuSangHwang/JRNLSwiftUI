@@ -14,7 +14,6 @@ struct MapView: View {
         Map(bounds: MapCameraBounds(minimumDistance: 4500, maximumDistance: 4500)) {
             Marker(journalEntry.entryTitle, coordinate: CLLocationCoordinate2D(latitude: journalEntry.latitude ?? 0.0, longitude: journalEntry.longitude ?? 0.0))
         }
-//        .bounds(MapCameraBounds(minimumDistance: 4500, maximumDistance: 4500))
     }
 }
 
