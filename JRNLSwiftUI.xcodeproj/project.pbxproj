@@ -13,6 +13,7 @@
 		78D57F9E2C05A3A000BAD6AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D57F9D2C05A3A000BAD6AD /* Preview Assets.xcassets */; };
 		78D57FA72C05A7F700BAD6AD /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D57FA62C05A7F700BAD6AD /* JournalEntry.swift */; };
 		78D57FA92C05AE5700BAD6AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D57FA82C05AE5700BAD6AD /* MapView.swift */; };
+		78D57FAB2C05B07D00BAD6AD /* JournalEntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D57FAA2C05B07D00BAD6AD /* JournalEntryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		78D57F9D2C05A3A000BAD6AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78D57FA62C05A7F700BAD6AD /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		78D57FA82C05AE5700BAD6AD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		78D57FAA2C05B07D00BAD6AD /* JournalEntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				78D57FA62C05A7F700BAD6AD /* JournalEntry.swift */,
 				78D57F962C05A39E00BAD6AD /* JRNLSwiftUIApp.swift */,
 				78D57FA82C05AE5700BAD6AD /* MapView.swift */,
+				78D57FAA2C05B07D00BAD6AD /* JournalEntryDetailView.swift */,
 				78D57F982C05A39E00BAD6AD /* ContentView.swift */,
 				78D57F9A2C05A3A000BAD6AD /* Assets.xcassets */,
 				78D57F9C2C05A3A000BAD6AD /* Preview Content */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78D57FA72C05A7F700BAD6AD /* JournalEntry.swift in Sources */,
+				78D57FAB2C05B07D00BAD6AD /* JournalEntryDetailView.swift in Sources */,
 				78D57FA92C05AE5700BAD6AD /* MapView.swift in Sources */,
 				78D57F992C05A39E00BAD6AD /* ContentView.swift in Sources */,
 				78D57F972C05A39E00BAD6AD /* JRNLSwiftUIApp.swift in Sources */,
